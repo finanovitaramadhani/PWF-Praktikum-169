@@ -55,7 +55,20 @@
 <div class="card">
     <h1>Fina Novita Ramadhani</h1>
     <p>20230140169</p>
-    <button>Modul Pertemuan 1</button>
+    <div style="margin-top:15px;">
+        @auth
+            <a href="{{ route('dashboard') }}">
+                <button>Modul Pertemuan 1</button>
+            </a>
+        @else
+            <a href="{{ route('login') }}">
+                <button>Login</button>
+            </a>
+
+            <a href="{{ route('register') }}">
+                <button>Register</button>
+            </a>
+        @endauth
 </div>
 
 </body>
