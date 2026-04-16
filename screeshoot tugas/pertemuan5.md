@@ -17,7 +17,7 @@ Route export:
 ![alt text](<file ss/user route export.png>)
 
 Policy:
--> user tidak bisa edit/delete orang lain
+-> user hanya bisa melihat
 ![alt text](<file ss/policy user.png>)
--> admin bisa semua
+-> admin bisa add product, edit, delete produknya sendiri
 ![alt text](<file ss/policy admin.png>)
