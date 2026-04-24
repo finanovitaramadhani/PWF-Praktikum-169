@@ -1,0 +1,1 @@
+![alt text](<file ss/tombol Edit dan Delete pada menu view.png>)
