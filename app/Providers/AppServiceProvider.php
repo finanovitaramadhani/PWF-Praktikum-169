@@ -1,8 +1,13 @@
 <?php
 
-namespace App\Providers;
+namespace App\Providers; 
+// Namespace untuk service provider (tempat konfigurasi global aplikasi)
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider; 
+// Class dasar untuk semua service provider di Laravel
+
+use Illuminate\Support\Facades\Gate; 
+// Digunakan untuk membuat authorization (hak akses / izin)
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -11,7 +16,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Tempat untuk mendaftarkan service ke container Laravel
+        // Biasanya digunakan untuk binding atau dependency injection
+        // Saat ini belum digunakan
     }
 
     /**
@@ -19,6 +26,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Method ini dijalankan saat aplikasi pertama kali di-load
+
+        Gate::define('isAdmin', function ($user) {
+            // Mendefinisikan gate bernama 'isAdmin'
+
+            // Mengecek apakah user memiliki role 'admin'
+            return $user->role === 'admin';
+        });
     }
 }
