@@ -1,0 +1,7 @@
+![alt text](<file ss/POST LOGIN.png>)
+![alt text](<file ss/POST CATEGORY.png>)
+![alt text](<file ss/POST PRODUCT.png>)
+![alt text](<file ss/GET PRODUCT.png>)
+![alt text](<file ss/PUT PRODUCT.png>)
+![alt text](<file ss/DELETE PRODUCT.png>)
+![alt text](<file ss/DELETE CATEGORY.png>)
